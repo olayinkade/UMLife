@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <script src="./script1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+    <!-- <script src="dhtmlxScheduler2/codebase/dhtmlxscheduler.js" type="text/javascript" charset="utf-8"></script>
+	  <link rel="stylesheet" href="dhtmlxScheduler2/codebase/dhtmlxscheduler_flat.css" type="text/css"  title="no title" charset="utf-8">
+	  <script src="dhtmlxScheduler2/codebase/ext/dhtmlxscheduler_editors.js" type="text/javascript" charset="utf-8"></script>
+	  <script src="dhtmlxScheduler2/codebase/ext/dhtmlxscheduler_minical.js" type="text/javascript" charset="utf-8"></script> -->
+
+    <title>UMLife|Managing your tasks</title>
+
+  </head>
+
+<body id="page">
+  <div class="container-fluid" >
+    <div class="row" id = "top-nav" >
+      <div class="col-xs-12" >
+        <div class="column left">
+          <div class= "column inner-left" id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a href="TaskTracker.html"><li>Task Tracker</li></a>
+              <a href="todolist.html"><li>ToDo List</li></a>
+              <a onclick = "tog('side-button-courses'); tog('side-button-courses1'); tog('side-button-courses2')" style="text-decoration:none"><li>Courses</li></a>
+
+              <li id="side-button-courses"  ><a href="Course1.html">Course 1</a></li>
+              <li id="side-button-courses1"><a href="Course2.html">Course 2</a></li>
+              <li id="side-button-courses2"><a href="Course3.html">Course 3</a></li>
+              <a href="http://bookstore.umanitoba.ca/SelectTermDept.aspx" target="_blank" ><li>Bookstore</li></a>
+            </ul>
+          </div>
+          <div class="column inner-right" id ="btn">
+            <a href="LandingPage.html" > <i  class="fa fa-home" aria-hidden="true"></i><b id = "btn-txt">Home</b ></a>
+
+          </div>
+        </div>
+        <div class="column middle">
+          <img src="images/logo4.png" alt="logo">
+          <b>UMLife</b>
+        </div>
+        <div class="column right">
+            <input id= "search-bar" type="text" name="search" placeholder="search..">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Stu Dent <span class="caret"></span></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Help</a>
+                <a href="#about">settings</a>
+                <a href="index.html">Logout</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+        <ol class="breadcrumb">
+            <li id="crumb"><a href ="LandingPage.html">Home</a></li>
+            <li id="crumb"class="active">TaskTracker</li>
+        </ol>
+    </div>
+    <div class="row">
+        <div class="col-xs-2" id = "side-nav">
+          <ul>
+            <li><a href="TaskTracker.html">TaskTracker</a></li>
+            <li><a href="todolist.html">ToDo List</a></li>
+            <li onclick = "tog('button-courses'); tog('button-courses1'); tog('button-courses2')" ><a >Courses <span class="caret"></span></a></li>
+            <li id="button-courses" ><a href="Course1.html"><i class="fa fa-book" aria-hidden="true"></i> Course 1</a></li>
+            <li id="button-courses1"><a href="Course2.html"><i class="fa fa-book" aria-hidden="true"></i> Course 2</a></li>
+            <li id="button-courses2"><a href="Course3.html"> <i class="fa fa-book" aria-hidden="true"></i> Course 3</a></li>
+
+            <li><a href="http://bookstore.umanitoba.ca/SelectTermDept.aspx" target="_blank" >Bookstore</a></li>
+
+          </ul>
+        </div>
+        <div class="col-xs-10" id="blackboard">
+          <div class="row">
+          <b id = "blackboard-mes">DRAG task to specific blocks</b>
+          </div>
+          <div class="row lefttracker" style="margin-top: 3%" >
+
+            <!-- first column  -->
+                <div class="col-sm-3" id="firstcol" style="background-color:lavender;"> <b style="text-align:center; font-size:20px">Yet to Begin</b>
+
+               <div class= "rowtracker" id="mydiv">
+                 <div id="mydivheader"> </div>
+               <div id="mydiv1">
+               <div id="mydivheader1">
+                 Comp3020 Millstone4
+
+               </div>
+
+
+
+
+
+
+      </div>
+      <br>
+      <br>
+      <!-- //second task -->
+      <div id="mydiv11">
+      <div id="mydivheader11">Comp3370 Assignment4</div>
+    </div>
+    <br>
+
+      <br>
+    <div id="mydiv12">
+    <div id="mydivheader12">Comp3380 Exam3</div>
+  </div>
+  <br>
+  <br>
+  <div id="mydiv13">
+  <div id="mydivheader13">Comp3190 Assignment4</div>
+</div>
+
+
+      <!-- <div id="mydiv11">
+       <div id="mydivheader11">Comp3380 Assignment3</div>
+         <div id="mydiv12">
+        <div id="mydivheader12">Comp3370 Assign</div> -->
+      <script>
+      ///////////////////Make the DIV element draggagle:
+      dragElement(document.getElementById(("mydiv1")));
+        ///////////////// end of drag
+      $("#mydivheader1").css({ 'width': $("#mydivheader1").width()+10 });
+      ///////////////////Make the DIV element draggagle:
+      dragElement(document.getElementById(("mydiv11")));
+
+
+      ///////////////// end of drag
+      $("#mydivheader11").css({ 'width': $("#mydivheader11").width()+10 });
+      dragElement(document.getElementById(("mydiv12")));
+        ///////////////// end of drag
+      $("#mydivheader12").css({ 'width': $("#mydivheader12").width()+10 });
+      dragElement(document.getElementById(("mydiv13")));
+        ///////////////// end of drag
+      $("#mydivheader13").css({ 'width': $("#mydivheader13").width()+10 })
+      </script>
+
+
+           </div>
+
+
+        </div>
+            <!-- second column -->
+          <div class="col-sm-3" id="secondcol" style="background-color:lavenderblush;"><b style="text-align:center; font-size:20px">In Progress</b>
+            <div class= "rowtracker" id="mydiv">
+            <div id="mydivheader1"></div>
+            <div id="mydiv2">
+            <div id="mydivheader2">COMP3020 Millstone3</div>
+             </div>
+              <br>
+              <br>
+             <div id="mydiv21">
+             <div id="mydivheader21">COMP3030 A4</div>
+              </div>
+              <br>
+              <br>
+              <div id="mydiv22">
+              <div id="mydivheader22">Comp3380 Assignment3</div>
+               </div>
+
+
+            <script>
+            //Make the DIV element draggagle:
+            dragElement(document.getElementById(("mydiv2")));
+
+
+               $("#mydivheader2").css({ 'width': $("#mydivheader1").width()+10 });
+
+               dragElement(document.getElementById(("mydiv21")));
+
+
+                  $("#mydivheader21").css({ 'width': $("#mydivheader21").width()+10 })
+                  dragElement(document.getElementById(("mydiv22")));
+
+
+                     $("#mydivheader22").css({ 'width': $("#mydivheader22").width()+10 })
+               </script>
+            </script>
+
+
+            </div>
+
+            </div>
+
+            <!-- third column  -->
+            <div class="col-sm-3" id="thirdcol" style="background-color:#e6fae6;"><b style="text-align:center; font-size:20px">Completed</b>
+              <div class= "rowtracker" id="mydiv">
+              <div id="mydivheader2"></div>
+              <div id="mydiv4">
+              <div id="mydivheader3">Review 3380 Chap5</div>
+                </div>
+                <br>
+                <br>
+                <div id="mydiv5">
+                <div id="mydivheader31">Comp3370 Assignment3</div>
+                  </div>
+                  <br>
+                  <br>
+                  <div id="mydiv6">
+                  <div id="mydivheader32">Comp3190 A2</div>
+
+
+
+              <script>
+              //Make the DIV element draggagle:
+              dragElement(document.getElementById(("mydiv4")));
+
+              dragElement(document.getElementById(("mydiv5")));
+
+              dragElement(document.getElementById(("mydiv6")));
+
+              $("#mydivheader3").css({ 'width': $("#mydivheader31").width()+10 });
+              dragElement(document.getElementById(("mydiv12")));
+                ///////////////// end of drag
+              $("#mydivheader31").css({ 'width': $("#mydivheader31").width()+10 });
+              dragElement(document.getElementById(("mydiv13")));
+                ///////////////// end of drag
+              $("#mydivheader32").css({ 'width': $("#mydivheader32").width()+10 })
+
+              </script>
+
+
+              </div>
+            </div>
+
+          </div>
+    </div>
+</div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

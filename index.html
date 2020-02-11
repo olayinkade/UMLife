@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>UMLife|Managing your tasks</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body id = "struct">
+    <div class="background"></div>
+    <div class="backdrop"></div>
+    <div class="container">
+      <div class="row" id ="login" >
+        <div class="col-sm-2"></div>
+        <div class="col-sm-3" id="login-div">
+          <h2>Welcome!</h2>
+          <p>Login with Your University of Manitoba credentials to manage your University activities.<br></p>
+
+          <em>Login Assistance:<br></em>
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a title="sevicedesk@umanitoba.ca" href="mailto:servicedesk@umanitoba.ca"><b>IST Desk</b><br></a>
+          <i class="fa fa-phone-square" aria-hidden="true"></i>
+          <b>(204)474-8600</b>
+        </div>
+
+      <div class="col-sm-4" id="login-div2">
+        <div class="logo-group" id="lgrp">
+          <img id="img-Logo" src="images/logo3.png" alt="">
+          <div id="logo-border">
+            <p id = "logo-txt"><b>UMLife</b></p>
+          </div>
+        </div>
+        <h2>Sign in</h2>
+        <h4 style ="font-size:20px;">to continue to UMLife</h4>
+        <form>
+          <div class="form-group">
+            <input class="inputMaterial" type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="usname" id="labels">UMNetID</label>
+          </div>
+          <div class="form-group">
+            <input class="inputMaterial" type="password" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="pwd" id="labels">Password</label>
+          </div>
+            <button id="buttonlogintoregister" type="submit" class="btn btn-primary" onclick="parent.location='LandingPage.html'">Login</button>
+          </div>
+        </form>
+        </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
