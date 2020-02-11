@@ -21,7 +21,8 @@ This project is a horizontal prototype, meaning that we only focused on completi
 
 
 ## Contributors
-Mawo Emmanuel Mommoh
-CJ Amanabu
-Yuan Ding
+- Olayinka Adelakun
+- Mawo Emmanuel Mommoh
+- CJ Amanabu
+- Yuan Ding
 
